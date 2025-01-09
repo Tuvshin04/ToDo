@@ -7,7 +7,6 @@ const STATUSES = {
 
 let todos = [];
 
-// id class call zone start__________________________________________________________
 const todoTasksContainer = document.getElementById("todo_tasks_container");
 const inProgressTasksContainer = document.getElementById(
   "inprogress_tasks_container"
@@ -28,15 +27,8 @@ const numberTodoElement = document.querySelector("p.numberTODO");
 const numberInprogressElement = document.querySelector("p.numberINPR");
 const numberDoneElement = document.querySelector("p.numberDONE");
 const numberBlockElement = document.querySelector("p.numberBLCD");
-
-// id class call zone end__________________________________________________________
-
-// use value zone start____________________________________________________________
 let isCreatingTask = false;
 let taskId = 0;
-// use value zone end______________________________________________________________
-
-//function start___________________________________________________________________
 
 function renderTASKweb() {
   let todoAbout = ``;
@@ -113,7 +105,6 @@ function renderTASKweb() {
   numberInprogressElement.innerHTML = countNumberI;
   numberDoneElement.innerHTML = countNumberD;
   numberBlockElement.innerHTML = countNumberB;
-  // selectElement.value = "";
   taskId = 0;
   isCreatingTask = false;
 }
@@ -144,13 +135,6 @@ function submit() {
       }
     }
   }
-
-  // submitButton.onclick = () => {
-
-  // };
-  //test zone start_____________________________________________
-
-  //test zone end_____________________________________________
 
   renderTASKweb();
   dialogContainer.classList.remove("flex");
